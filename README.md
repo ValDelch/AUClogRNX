@@ -8,6 +8,7 @@ Given a dataset $`X`$ in a high dimensional space and $`Y`$ a low dimensional re
 ```math
 Q_{NX}(K) = \frac{1}{KN} \sum_{i=1}^{N} |\nu_i^K \eta_i^K|
 ```
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;Q_{NX}(K) = \frac{1}{KN} \sum_{i=1}^{N} |\nu_i^K \eta_i^K|" title="\Large Q_{NX}(K) = \frac{1}{KN} \sum_{i=1}^{N} |\nu_i^K \eta_i^K|" />
 
 where $`\nu_i^K`$ is the K-ary neighbourhoods of $`x_i`$ in $`X`$, and $`\eta_i^K`$ is the K-ary neighbourhoods of $`y_i`$ in $`Y`$
 

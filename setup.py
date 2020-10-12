@@ -9,10 +9,6 @@ setup(
         Extension('AUClogRNX_cython',
                   sources=['AUClogRNX_cython.pyx'],
                   extra_compile_args=['-O3'],
-                  language='c++'),
-        Extension('AUClogRNX_NN_cython',
-                  sources=['AUClogRNX_NN_cython.pyx'],
-                  extra_compile_args=['-O3'],
                   language='c++')
         ],
     include_dirs=[np.get_include()],
