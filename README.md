@@ -16,7 +16,7 @@ is the K-ary neighbourhoods of `y_i` in Y.
 Then, AUClogRNX score is defined as
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;R_{NX}(K)=\frac{(N-1)Q_{NX}(K)-K}{N-1-K}" title="\Large R_{NX}(K)=\frac{(N-1)Q_{NX}(K)-K}{N-1-K}" />
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;AUClogRNX=\frac{\sum_{K=1}^{N-2}R_{NX}(K)/K}{\sum_{K=1}^{N-2}1/K}" title="\Large AUClogRNX=\frac{\sum_{K=1}^{N-2}R_{NX}(K)/K}{\sum_{K=1}^{N-2}1/K}" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;AUClogRNX=\frac{\sum_{K=1}^{N-2}\frac{R_{NX}(K)}{K}}{\sum_{K=1}^{N-2}\frac{1}{K}}" title="\Large AUClogRNX=\frac{\sum_{K=1}^{N-2}\frac{R_{NX}(K)}{K}}{\sum_{K=1}^{N-2}\frac{1}{K}}" />
 
 ### Dependencies
 
