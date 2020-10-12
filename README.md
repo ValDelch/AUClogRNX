@@ -30,22 +30,12 @@ Then, AUClogRNX score is defined as
 >> python setup.py build_ext --inplace
 ```
 
-### Verification
-
-If matplotlib is installed, you can try...
-
-```python
->> python test_PM.py
-```
-
-... in order to test the implementation on the 70 000 instances of MNIST.
-
 ### Utilisation
 
 ```python
-import PM_tSNE
-tsne = PM_tSNE.PM_tSNE(n_iter=750, coeff=8.0, grid_meth='NGP')
-# Load the 70 000 instances of MNIST (already prepared for t-SNE: standardized + reduced to 50 features with PCA)
-X = np.load('./MNIST_data.npy', allow_pickle=True)
-Embedding = tsne.fit_transform(X)
+import AUClogRNX_cython
+X = np.random.rand(1000,50)
+Y = np.random.rand(1000,2)
+
+AUClogRNX = AUClogRNX_cython.compute(X, Y)
 ```
